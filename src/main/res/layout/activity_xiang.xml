@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xiang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.jd.view.XiangActivity">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/xiang_banner"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"></com.youth.banner.Banner>
+
+        <TextView
+            android:id="@+id/xiang_title"
+            android:text="111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"/>
+
+        <TextView
+            android:id="@+id/xiang_name"
+            android:text="222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xiang_price"
+            android:text="333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/xiang_btn"
+        android:text="添加到购物车"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

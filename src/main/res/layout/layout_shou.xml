@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:background="#D4D4D4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shouye_saoyisao"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/saoyisao"
+            />
+
+        <EditText
+            android:id="@+id/shouye_edit"
+            android:background="#fff"
+            android:drawableLeft="@drawable/sousuo"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:hint="寻找宝贝、商品"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:drawableRight="@mipmap/ati"/>
+
+        <ImageView
+            android:id="@+id/shouye_xiaoxi"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/xiaoxi"
+            />
+    </LinearLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/shou_spring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shouye_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>
